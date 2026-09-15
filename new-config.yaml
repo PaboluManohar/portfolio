@@ -19,15 +19,18 @@ summary:
   bio: "Software Engineer with production experience in Python, FastAPI, backend systems, Agentic AI, Kubernetes, cloud infrastructure, and distributed systems. Experienced in designing, developing, and deploying scalable production systems across cloud-hosted services and hardware-integrated infrastructure. Built multi-agent workflows using LangChain, LangGraph, MCP, LiteLLM, and Langfuse, while also working on Kubernetes infrastructure, hybrid cloud networking, real-time communication, device orchestration, observability, and high-reliability backend systems."
   stats:
     - label: "Years Experience"
-      value: "1+"
-    - label: "FlintAPI Delivery"
+      value: "2+"
+    - label: "FlintAPI Feature Delivery"
       value: "1 Week"
-    - label: "Promotion to Full-Time"
-      value: "3 Months"
+    - label: "Backend + DevOps + Cloud"
+      value: "Production"
     - label: "State rank in Eamcet (AP) 2021"
       value: "1305"
-    - label: "Academic CGPA (AU)"
-      value: "8.66 / 10"
+    - label: "Android Runtime Research"
+      value: "~45 MB"
+
+    # - label: "Academic CGPA (AU)"
+    #   value: "8.66 / 10"
 
 
 
