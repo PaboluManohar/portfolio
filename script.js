@@ -328,7 +328,7 @@ async function initPortfolio() {
   const mainContent = document.getElementById('main-content');
 
   try {
-    const response = await fetch('configuration.yaml');
+    const response = await fetch('new-config.yaml');
     if (!response.ok) {
       throw new Error(`HTTP error fetching configuration! Status: ${response.status} (${response.statusText})`);
     }
@@ -455,7 +455,11 @@ function renderHero(personal = {}, contact = {}, summary = {}) {
           <div class="profile-card glass-card">
             <div class="avatar-ring">
               <div class="avatar-circle">
-                <span class="avatar-initials">${escapeHtml(personal.avatar_initials || 'PM')}</span>
+                ${personal.profile_pic ? `
+                  <img src="${escapeHtml(personal.profile_pic)}" alt="${escapeHtml(personal.name)}" class="avatar-img" />
+                ` : `
+                  <span class="avatar-initials">${escapeHtml(personal.avatar_initials || 'PM')}</span>
+                `}
               </div>
             </div>
             <div class="profile-info">
