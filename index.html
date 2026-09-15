@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pabolu Manohar | Software Engineer · Backend & Agentic AI</title>
+  <meta name="description" content="Portfolio of Pabolu Manohar - Software Engineer specializing in Python, FastAPI, Agentic AI, Kubernetes, and Cloud Infrastructure.">
+  <meta name="author" content="Pabolu Manohar">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Pabolu Manohar | Software Engineer">
+  <meta property="og:description" content="Software Engineer specializing in Backend Systems, Agentic AI, and Cloud Infrastructure.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- AOS (Animate On Scroll) CSS via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- js-yaml CDN library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+
+  <!-- tsParticles CDN Library for Cinematic Background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.12.0/tsparticles.bundle.min.js"></script>
+
+  <!-- AOS (Animate On Scroll) JS via CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+<body>
+  <!-- Cinematic tsParticles interactive background canvas -->
+  <div id="tsparticles"></div>
+
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero-section" class="nav-brand" id="nav-brand">
+        <span class="brand-badge">PM</span>
+        <span class="brand-text">Pabolu Manohar</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about-section" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+        <li><a href="#experience-section" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+        <li><a href="#skills-section" class="nav-link"><i class="fa-solid fa-microchip"></i> Skills</a></li>
+        <li><a href="#projects-section" class="nav-link"><i class="fa-solid fa-layer-group"></i> Projects</a></li>
+        <li><a href="#education-section" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+        <li><a href="#contact-section" class="nav-cta"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Global Loading Indicator -->
+  <div id="loading-state" class="loading-state">
+    <div class="loader-spinner"></div>
+    <p class="loader-text">Loading portfolio configuration...</p>
+  </div>
+
+  <!-- Global Error Banner -->
+  <div id="error-state" class="error-state" style="display: none;">
+    <div class="error-card">
+      <i class="fa-solid fa-triangle-exclamation error-icon"></i>
+      <h3>Unable to Load Configuration</h3>
+      <p id="error-message">Could not fetch configuration.yaml.</p>
+      <div class="error-tip">
+        <strong>Tip:</strong> If you are running this locally directly from file explorer (<code>file://</code>), browser security prevents <code>fetch()</code> requests. Please serve the folder via a local server:
+        <pre><code>python3 -m http.server 8000</code></pre>
+      </div>
+      <button class="btn btn-primary" onclick="window.location.reload()">Retry</button>
+    </div>
+  </div>
+
+  <!-- Main Content Areas populated dynamically -->
+  <main id="main-content" class="main-content" style="opacity: 0; transition: opacity 0.5s ease;">
+    <!-- Hero Section Container -->
+    <header id="hero-section" class="section hero-section"></header>
+
+    <!-- About Section Container -->
+    <section id="about-section" class="section about-section" data-aos="fade-up"></section>
+
+    <!-- Work Experience Container -->
+    <section id="experience-section" class="section experience-section" data-aos="fade-up"></section>
+
+    <!-- Skills Container -->
+    <section id="skills-section" class="section skills-section" data-aos="fade-up"></section>
+
+    <!-- Notable Projects Container -->
+    <section id="projects-section" class="section projects-section" data-aos="fade-up"></section>
+
+    <!-- Education & Certifications Container -->
+    <section id="education-section" class="section education-section" data-aos="fade-up"></section>
+
+    <!-- Contact Container -->
+    <section id="contact-section" class="section contact-section" data-aos="fade-up"></section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <p>© <span id="footer-year">2025</span> Pabolu Manohar. Built with Vanilla JS & YAML configuration.</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/PaboluManohar/portfolio" target="_blank" rel="noopener noreferrer" class="footer-link">
+          <i class="fa-brands fa-github"></i> View Source
+        </a>
+        <a href="#hero-section" class="footer-link">
+          <i class="fa-solid fa-arrow-up"></i> Back to Top
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container for interactive actions -->
+  <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+
+  <!-- Application Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
