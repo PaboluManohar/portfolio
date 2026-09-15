@@ -62,7 +62,7 @@ function initCanvasBackground() {
   function resize() {
     width = canvas.width = window.innerWidth;
     height = canvas.height = window.innerHeight;
-    
+
     // Scale node density according to viewport size
     const nodeCount = Math.min(65, Math.max(28, Math.floor((width * height) / 22000)));
     nodes = [];
@@ -358,9 +358,10 @@ async function initPortfolio() {
     const typingTarget = document.getElementById('typing-title');
     const titlesToType = [
       'Software Engineer',
-      'Backend & Agentic AI',
+      'Python Developer',
+      'Backend & Agentic AI Developer',
       'Distributed Systems',
-      'Cloud & Kubernetes'
+      'Cloud & Docker & Kubernetes'
     ];
     startTerminalTyping(typingTarget, titlesToType);
 
