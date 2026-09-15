@@ -31,6 +31,7 @@ const SVG_ICONS = {
   copy: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>',
   external: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>',
   graduation: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>',
+  download: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>',
   send: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>'
 };
 
@@ -423,6 +424,9 @@ function renderHero(personal = {}, contact = {}, summary = {}) {
           <div class="hero-cta-group">
             <a href="#experience-section" class="btn btn-primary">
               ${SVG_ICONS.briefcase} View Work Experience
+            </a>
+            <a href="${escapeHtml(personal.resume || 'resume/Pabolu_Manohar_Resume.docx')}" download class="btn btn-secondary" title="Download Pabolu Manohar Resume (.docx)">
+              ${SVG_ICONS.download} Download Resume
             </a>
             <a href="#contact-section" class="btn btn-secondary">
               ${SVG_ICONS.send} Contact Me
@@ -859,6 +863,19 @@ function renderContact(contact = {}, personal = {}) {
               </a>
             </div>
           ` : ''}
+
+          <div class="contact-method-box">
+            <div class="method-icon">${SVG_ICONS.download}</div>
+            <div class="method-info">
+              <span class="method-label">Curriculum Vitae</span>
+              <a href="${escapeHtml(personal.resume || 'resume/Pabolu_Manohar_Resume.docx')}" download class="method-value">
+                Pabolu_Manohar_Resume.docx
+              </a>
+            </div>
+            <a href="${escapeHtml(personal.resume || 'resume/Pabolu_Manohar_Resume.docx')}" download class="btn-copy" title="Download Resume (.docx)">
+              ${SVG_ICONS.download}
+            </a>
+          </div>
         </div>
 
         <div class="contact-cta-wrapper">
