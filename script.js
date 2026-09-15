@@ -468,9 +468,9 @@ function renderHero(personal = {}, contact = {}, summary = {}) {
               <p class="profile-loc">${SVG_ICONS.location} ${escapeHtml(personal.location || 'India')}</p>
             </div>
             <div class="profile-chips">
-              <span class="mini-chip">${SVG_ICONS.code} Python / FastAPI</span>
+              <span class="mini-chip">${SVG_ICONS.code} Python & FastAPI</span>
               <span class="mini-chip">${SVG_ICONS.cloud} Kubernetes (GKE)</span>
-              <span class="mini-chip">${SVG_ICONS.brain} Agentic AI / MCP</span>
+              <span class="mini-chip">${SVG_ICONS.brain} Agentic AI & LangChain EcoSystem & MCP</span>
             </div>
           </div>
         </div>
