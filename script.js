@@ -469,7 +469,7 @@ function renderHero(personal = {}, contact = {}, summary = {}) {
             </div>
             <div class="profile-chips">
               <span class="mini-chip">${SVG_ICONS.code} Python & FastAPI</span>
-              <span class="mini-chip">${SVG_ICONS.cloud} Kubernetes (GKE)</span>
+              <span class="mini-chip">${SVG_ICONS.cloud} Docker & Kubernetes</span>
               <span class="mini-chip">${SVG_ICONS.brain} Agentic AI & LangChain EcoSystem & MCP</span>
             </div>
           </div>
