@@ -357,10 +357,10 @@ async function initPortfolio() {
     // Start terminal-style typing animation for the main title
     const typingTarget = document.getElementById('typing-title');
     const titlesToType = [
-      data.personal.tagline || 'Software Engineer · Backend & Agentic AI',
-      'Backend & Distributed Microservices Architect',
-      'Autonomous Multi-Agent AI & MCP Developer',
-      'Kubernetes (GKE) Cloud Infrastructure Specialist'
+      'Software Engineer',
+      'Backend & Agentic AI',
+      'Distributed Systems',
+      'Cloud & Kubernetes'
     ];
     startTerminalTyping(typingTarget, titlesToType);
 

@@ -480,7 +480,7 @@ body {
 
 /* Terminal Typing Container */
 .hero-headline {
-  font-size: 1.45rem;
+  font-size: 1.35rem;
   font-weight: 600;
   color: var(--accent-cyan);
   margin-bottom: 1.4rem;
@@ -488,8 +488,10 @@ body {
   font-family: var(--font-mono);
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   min-height: 2.2rem;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .terminal-prompt {
