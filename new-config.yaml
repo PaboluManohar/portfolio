@@ -216,7 +216,7 @@ projects:
 
   - title: "Firecracker MicroVM-Based Sandbox"
     category: "Cloud Infrastructure & Sandboxing"
-    description: "Explored and implemented isolated execution environments using Firecracker MicroVMs, focusing on lightweight virtualization, secure workload isolation, VM lifecycle management, networking, and resource constraints for running untrusted or agent-generated workloads."
+    description: "Building a distributed execution and orchestration platform using Firecracker MicroVMs for securely running untrusted workloads, remote code execution, and AI agent tasks. The platform focuses on strong workload isolation, automated MicroVM provisioning and lifecycle management, distributed scheduling, resource constraints, networking controls, and secure execution across multiple hosts."
     tech_stack:
       - "Firecracker"
       - "MicroVM"
