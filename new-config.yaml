@@ -152,7 +152,7 @@ experience:
     company_url: "https://flintlab.io"
     role: "Software Engineering Intern"
     type: "Internship"
-    period: "Dec 2024 – Mar 2025"
+    period: "Sept 2024 – Mar 2025"
     location: "Visakhapatnam, India"
     overview: "Worked within core hardware-software infrastructure involving Linux servers, physical Android devices, USB connectivity, and mobile device allocation pipelines."
     bullets:
@@ -190,20 +190,61 @@ education:
     highlights: "Graduated with a perfect academic record."
 
 projects:
+  - title: "DevAutoFlow-MCP: AI-Powered Mobile Test Automation"
+    category: "Agentic AI & Test Automation"
+    description: "Built an AI-powered mobile test automation platform using MCP, FastAPI, and multi-agent orchestration. Designed workflows for selecting devices and applications, executing natural-language test scenarios, and aggregating results across multiple Android devices."
+    tech_stack:
+      - "Python"
+      - "FastAPI"
+      - "MCP"
+      - "LangGraph"
+      - "LangChain"
+      - "ADB"
+      - "PostgreSQL"
+      - "Docker"
+    github_link: "https://github.com/PaboluManohar"
+
+  - title: "Agentic AI Multi-Agent Orchestration Platform"
+    category: "Agentic AI"
+    description: "Designed and implemented multi-agent workflows for automated task execution using LangGraph and LangChain. Integrated MCP servers for standardized tool access and LiteLLM as an LLM gateway, with Langfuse for tracing, observability, and debugging of agent workflows."
+    tech_stack:
+      - "Python"
+      - "LangChain"
+      - "LangGraph"
+      - "MCP"
+      - "LiteLLM"
+      - "Langfuse"
+      - "LLMs"
+    github_link: "https://github.com/PaboluManohar"
+
+  - title: "Firecracker MicroVM-Based Sandbox"
+    category: "Cloud Infrastructure & Sandboxing"
+    description: "Explored and implemented isolated execution environments using Firecracker MicroVMs, focusing on lightweight virtualization, secure workload isolation, VM lifecycle management, networking, and resource constraints for running untrusted or agent-generated workloads."
+    tech_stack:
+      - "Firecracker"
+      - "MicroVM"
+      - "Linux"
+      - "Docker"
+      - "KVM"
+      - "Cloud Infrastructure"
+    github_link: "https://github.com/PaboluManohar"
+
   - title: "3-Tier Microservices Architecture on Kubernetes"
     category: "Cloud Infrastructure"
-    description: "Designed, containerized, and deployed a production-style three-tier microservices application on Kubernetes using AWS, covering the complete flow from infrastructure provisioning to live traffic routing. Implemented ingress controllers, automated failover, persistent storage volumes, and declarative Helm-based deployments."
+    description: "Designed, containerized, and deployed a production-style three-tier application composed of 5+ microservices on Kubernetes. Implemented service-to-service communication, ingress-based traffic routing, persistent storage, Helm-based declarative deployments, and cloud infrastructure on AWS."
     tech_stack:
       - "Docker"
       - "Kubernetes"
       - "AWS"
       - "Helm"
       - "Microservices"
+      - "Ingress"
+      - "Linux"
     github_link: "https://github.com/PaboluManohar"
 
   - title: "Enterprise Contact Manager Platform"
     category: "Backend Systems"
-    description: "Full-stack web application engineered with Spring Boot and MySQL, implementing REST APIs, secure session management, data validation, and pagination for handling large record sets."
+    description: "Developed a full-stack contact management application with RESTful APIs, secure session management, server-side validation, pagination, and persistent data storage for efficiently managing large contact datasets."
     tech_stack:
       - "Java"
       - "Spring Boot"
