@@ -76,7 +76,7 @@ function initCanvasBackground() {
         vy: (Math.random() - 0.5) * 0.45,
         radius: Math.random() * 2 + 1.2,
         color: colors[Math.floor(Math.random() * colors.length)],
-        baseAlpha: Math.random() * 0.35 + 0.25
+        baseAlpha: Math.random() * 0.16 + 0.1
       });
     }
   }
@@ -139,7 +139,7 @@ function initCanvasBackground() {
         const dist = Math.sqrt(dx * dx + dy * dy);
 
         if (dist < maxDistance) {
-          const lineAlpha = (1 - dist / maxDistance) * 0.22;
+          const lineAlpha = (1 - dist / maxDistance) * 0.08;
           ctx.beginPath();
           ctx.moveTo(node.x, node.y);
           ctx.lineTo(nodeB.x, nodeB.y);
