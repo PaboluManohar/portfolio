@@ -20,15 +20,12 @@ summary:
   stats:
     - label: "Years Experience"
       value: "2+"
-    - label: "FlintAPI Feature Delivery"
-      value: "1 Week"
     - label: "Backend + DevOps + Cloud"
       value: "Production"
-    - label: "State rank in Eamcet (AP) 2021"
-      value: "1305"
     - label: "Android Runtime Research"
       value: "~45 MB"
-
+    - label: "State rank in Eamcet (AP) 2021"
+      value: "1305"
     # - label: "Academic CGPA (AU)"
     #   value: "8.66 / 10"
 
