@@ -95,8 +95,8 @@ function initCanvasBackground() {
   });
 
   function animate() {
-    // Very dark background trail clearing
-    ctx.fillStyle = 'rgba(6, 9, 17, 0.26)';
+    // Light background trail clearing
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.26)';
     ctx.fillRect(0, 0, width, height);
 
     const nodeLength = nodes.length;
