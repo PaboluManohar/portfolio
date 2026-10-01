@@ -108,7 +108,7 @@ experience:
     company_url: "https://flintlab.io"
     role: "Software Engineer"
     type: "Full-Time"
-    period: "Mar 2025 – Present"
+    period: "Sept 2024 – Present"
     location: "Visakhapatnam, India"
     overview: "FlintLab is a Seattle-based SaaS platform providing real Android devices, emulators, and simulators for comprehensive cross-device testing."
     bullets:
@@ -144,25 +144,6 @@ experience:
       - "WebRTC"
       - "ADB"
       - "Appium"
-
-  - company: "FlintLab"
-    company_url: "https://flintlab.io"
-    role: "Software Engineering Intern"
-    type: "Internship"
-    period: "Sept 2024 – Mar 2025"
-    location: "Visakhapatnam, India"
-    overview: "Worked within core hardware-software infrastructure involving Linux servers, physical Android devices, USB connectivity, and mobile device allocation pipelines."
-    bullets:
-      - "Worked with Linux server infrastructure, physical USB device enumeration, Android device communication, and mobile device allocation pipelines."
-      - "Gained hands-on experience across hardware-software infrastructure, Linux systems, device management, and backend infrastructure workflows."
-      - "Demonstrated strong technical ownership, initiative, and high-velocity contributions, earning promotion to a full-time Software Engineer after three months."
-    tags:
-      - "Linux"
-      - "ADB"
-      - "Python"
-      - "Docker"
-      - "Networking"
-      - "USB"
 
 education:
   - institution: "Andhra University College of Engineering"
