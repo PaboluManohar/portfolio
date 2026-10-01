@@ -28,6 +28,7 @@
   --gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
 
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Bricolage Grotesque', 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -58,7 +59,7 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--bg-main);
+  background: #f4f1ee;
   color: var(--text-primary);
   line-height: 1.6;
   min-height: 100vh;
@@ -156,6 +157,7 @@ body {
 }
 
 .section-title {
+  font-family: var(--font-display);
   font-size: 2.35rem;
   font-weight: 800;
   letter-spacing: -0.025em;
@@ -176,12 +178,12 @@ body {
    ========================================================================== */
 .glass-card {
   position: relative;
-  background: var(--bg-surface-elevated);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
   transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s ease;
   overflow: hidden;
   z-index: 1;
@@ -424,25 +426,28 @@ body {
 .status-indicator {
   display: inline-flex;
   align-items: center;
-  gap: 0.55rem;
-  font-family: var(--font-mono);
-  font-size: 0.825rem;
-  color: var(--accent-emerald);
-  background: rgba(16, 185, 129, 0.08);
-  border: 1px solid rgba(16, 185, 129, 0.2);
-  padding: 0.4rem 0.9rem;
+  gap: 0.8rem;
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1f2937;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1.5px solid rgba(124, 58, 237, 0.24);
+  padding: 0.9rem 1.4rem;
   border-radius: var(--radius-full);
+  box-shadow: 0 4px 16px rgba(124, 58, 237, 0.08);
 }
 
 .status-dot {
-  width: 8px;
-  height: 8px;
+  width: 11px;
+  height: 11px;
   border-radius: 50%;
-  background-color: var(--accent-emerald);
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  box-shadow: 0 0 0 5px rgba(34, 197, 94, 0.12);
 }
 
 .status-dot.pulse {
-  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.45);
   animation: pulse-green 2s infinite;
 }
 
@@ -468,14 +473,15 @@ body {
 }
 
 .hero-name {
-  font-size: 3.6rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 5vw, 5rem);
   font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: -0.035em;
+  line-height: 1.02;
+  letter-spacing: -0.05em;
   margin-bottom: 0.8rem;
-  background: linear-gradient(180deg, #020617 20%, #334155 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #111827;
+  background: none;
+  -webkit-text-fill-color: initial;
 }
 
 /* Terminal Typing Container */
@@ -570,16 +576,16 @@ body {
 
 /* Profile Card in Hero */
 .profile-card {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.96) 0%, rgba(248, 250, 252, 0.92) 100%);
-  border: 1px solid rgba(15, 23, 42, 0.12);
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(15, 23, 42, 0.08);
   border-radius: var(--radius-lg);
-  padding: 2.5rem 2rem;
+  padding: 0;
   text-align: center;
-  box-shadow: var(--shadow-lg), 0 0 30px rgba(99, 102, 241, 0.15);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.25rem;
+  gap: 0;
   position: relative;
   overflow: hidden;
 }
@@ -631,50 +637,54 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
 .profile-info .profile-name {
-  font-size: 1.35rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.1rem;
 }
 
 .profile-info .profile-role {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   color: var(--accent-cyan);
-  font-weight: 500;
-  margin-bottom: 0.35rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
 }
 
 .profile-info .profile-loc {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--text-muted);
 }
 
-.profile-chips {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  width: 100%;
-  margin-top: 0.5rem;
-}
-
-.mini-chip {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
-  padding: 0.45rem 0.75rem;
-  font-family: var(--font-mono);
-  font-size: 0.785rem;
-  color: var(--text-secondary);
-  display: flex;
+.profile-highlight {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.55rem;
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.45);
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  line-height: 1.4;
+  text-align: center;
 }
 
-.mini-chip svg {
-  width: 14px;
-  height: 14px;
-  color: var(--accent-cyan);
+.profile-highlight-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.12);
+  flex-shrink: 0;
 }
 
 /* Hero Stats Row */
@@ -1111,6 +1121,9 @@ body {
 }
 
 .skill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   font-family: var(--font-mono);
   font-size: 0.825rem;
   background: rgba(255, 255, 255, 0.03);
@@ -1119,6 +1132,17 @@ body {
   padding: 0.4rem 0.8rem;
   border-radius: var(--radius-sm);
   transition: all var(--transition-fast);
+}
+
+.skill-badge-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.1rem;
+  height: 1.1rem;
+  font-size: 0.9rem;
+  line-height: 1;
+  flex-shrink: 0;
 }
 
 .skill-badge:hover {
@@ -2139,9 +2163,9 @@ body {
 .profile-card {
   max-width: 400px;
   margin-left: auto;
-  padding: 0 0 1.35rem;
+  padding: 0;
   align-items: stretch;
-  gap: 0.65rem;
+  gap: 0;
   text-align: left;
 }
 

@@ -26,6 +26,23 @@ const SVG_ICONS = {
   check: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>',
   github: '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>',
   linkedin: '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>',
+  leetcode: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8l-4 4 4 4"></path><path d="M16 8l4 4-4 4"></path><path d="M13 4l-2 16"></path></svg>',
+  python: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2.5h6a3 3 0 0 1 3 3v1.5h-1.5A2.5 2.5 0 0 0 14 9.5v5A2.5 2.5 0 0 0 16.5 17H18v1.5a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V17h1.5A2.5 2.5 0 0 0 10 14.5v-5A2.5 2.5 0 0 0 7.5 7H6V5.5a3 3 0 0 1 3-3z"></path><path d="M9 8.5h6"></path><path d="M9 15.5h6"></path></svg>',
+  kubernetes: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v6"></path><path d="M7 7l5 5 5-5"></path><path d="M5 11h14"></path><path d="M7 11v7"></path><path d="M17 11v7"></path><path d="M4 18h16"></path></svg>',
+  docker: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="12" rx="2"></rect><path d="M7 7V5.5a1.5 1.5 0 0 1 3 0V7"></path><path d="M11 7V5.5a1.5 1.5 0 0 1 3 0V7"></path><path d="M15 7V5.5a1.5 1.5 0 0 1 3 0V7"></path><path d="M7 11h10"></path><path d="M7 15h7"></path></svg>',
+  link: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.07 0l1.41-1.41a5 5 0 0 0-7.07-7.07L10.5 6.5"></path><path d="M14 11a5 5 0 0 0-7.07 0L5.52 12.41a5 5 0 0 0 7.07 7.07l1.41-1.41"></path></svg>',
+  graph: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18"></path><path d="M7 15V9"></path><path d="M12 15V5"></path><path d="M17 15v-7"></path></svg>',
+  layers: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 5-9 5-9-5 9-5z"></path><path d="M3 12l9 5 9-5"></path><path d="M3 17l9 5 9-5"></path></svg>',
+  bot: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="12" rx="2"></rect><path d="M9 11h.01"></path><path d="M15 11h.01"></path><path d="M9 16c1.2 1.2 4.8 1.2 6 0"></path><path d="M8 7V5.5a1.5 1.5 0 0 1 3 0V7"></path><path d="M13 7V5.5a1.5 1.5 0 0 1 3 0V7"></path></svg>',
+  trend: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l7-7 4 4 7-9"></path><path d="M14 5h7v7"></path></svg>',
+  java: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 15c-1.4 0-2.5 1.1-2.5 2.5S5.6 20 7 20h10c1.4 0 2.5-1.1 2.5-2.5S18.4 15 17 15"></path><path d="M8 15V9a4 4 0 0 1 8 0v6"></path><path d="M10 9h4"></path></svg>',
+  leaf: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 3c-8.28 0-15 6.72-15 15 8.28 0 15-6.72 15-15z"></path><path d="M5 19c2.8-2.8 7.2-7.2 14-14"></path></svg>',
+  anchor: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"></circle><path d="M8 10l4 9 4-9"></path><path d="M5 11c0 3 3 5 7 5s7-2 7-5"></path></svg>',
+  api: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10H7z"></path><path d="M10 10h4v4h-4z"></path><path d="M3 12h4"></path><path d="M17 12h4"></path></svg>',
+  shield: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 5-3.5 8-7 10-3.5-2-7-5-7-10V7l7-4z"></path></svg>',
+  terminal: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"></path><path d="M8 10l3 2-3 2"></path><path d="M13 14h3"></path></svg>',
+  sparkle: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"></path><path d="M12 18v4"></path><path d="M2 12h4"></path><path d="M18 12h4"></path><path d="M5 5l2.5 2.5"></path><path d="M16.5 16.5L19 19"></path><path d="M19 5l-2.5 2.5"></path><path d="M7.5 16.5L5 19"></path></svg>',
+  default: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M8 8h8v8H8z"></path></svg>',
   email: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>',
   phone: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>',
   copy: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>',
@@ -442,6 +459,11 @@ function renderHero(personal = {}, contact = {}, summary = {}) {
                   ${SVG_ICONS.linkedin}
                 </a>
               ` : ''}
+              ${contact.leetcode ? `
+                <a href="${escapeHtml(contact.leetcode)}" target="_blank" rel="noopener noreferrer" class="social-btn" title="LeetCode">
+                  ${SVG_ICONS.leetcode}
+                </a>
+              ` : ''}
               ${contact.email ? `
                 <button class="social-btn copy-email-btn" data-email="${escapeHtml(contact.email)}" title="Copy Email">
                   ${SVG_ICONS.email}
@@ -461,16 +483,6 @@ function renderHero(personal = {}, contact = {}, summary = {}) {
                   <span class="avatar-initials">${escapeHtml(personal.avatar_initials || 'PM')}</span>
                 `}
               </div>
-            </div>
-            <div class="profile-info">
-              <h3 class="profile-name">${escapeHtml(personal.name)}</h3>
-              <p class="profile-role">${SVG_ICONS.code} ${escapeHtml(personal.title)}</p>
-              <p class="profile-loc">${SVG_ICONS.location} ${escapeHtml(personal.location || 'India')}</p>
-            </div>
-            <div class="profile-chips">
-              <span class="mini-chip">${SVG_ICONS.code} Python & FastAPI</span>
-              <span class="mini-chip">${SVG_ICONS.cloud} Docker & Kubernetes</span>
-              <span class="mini-chip">${SVG_ICONS.brain} Agentic AI & LangChain EcoSystem & MCP</span>
             </div>
           </div>
         </div>
@@ -638,10 +650,55 @@ function renderSkills(categories = []) {
     'Databases & Protocols': SVG_ICONS.database
   };
 
+  const skillIcons = {
+    'Python': 'fa-brands fa-python',
+    'FastAPI': 'fa-solid fa-bolt',
+    'Kubernetes': 'fa-solid fa-cubes',
+    'Kubernetes (GKE)': 'fa-solid fa-cubes',
+    'Docker': 'fa-brands fa-docker',
+    'LangChain': 'fa-solid fa-link',
+    'LangGraph': 'fa-solid fa-diagram-project',
+    'Model Context Protocol (MCP)': 'fa-solid fa-cubes',
+    'LiteLLM': 'fa-solid fa-robot',
+    'Langfuse': 'fa-solid fa-chart-line',
+    'Redis': 'fa-solid fa-database',
+    'Prometheus': 'fa-solid fa-chart-column',
+    'Grafana': 'fa-solid fa-chart-area',
+    'Google Cloud Platform (GCP)': 'fa-brands fa-google',
+    'AWS': 'fa-brands fa-aws',
+    'Linux Systems': 'fa-brands fa-linux',
+    'Java': 'fa-brands fa-java',
+    'SpringBoot': 'fa-solid fa-seedling',
+    'Go (Learning)': 'fa-brands fa-golang',
+    'Helm': 'fa-solid fa-anchor',
+    'PostgreSQL': 'fa-solid fa-database',
+    'MySQL': 'fa-solid fa-database',
+    'MongoDB': 'fa-solid fa-database',
+    'Elasticsearch': 'fa-solid fa-search',
+    'Kafka': 'fa-solid fa-message',
+    'GitHub Actions': 'fa-brands fa-github',
+    'Node Exporter': 'fa-solid fa-server',
+    'cAdvisor': 'fa-solid fa-server',
+    'Dapr SDK (CNCF)': 'fa-solid fa-shield-halved',
+    'Stripe SDK': 'fa-solid fa-credit-card',
+    'Multi-Agent Systems': 'fa-solid fa-users',
+    'Agentic AI': 'fa-solid fa-wand-magic-sparkles',
+    'Agentic Workflows': 'fa-solid fa-arrows-spin',
+    'Agent Orchestration': 'fa-solid fa-network-wired',
+    'LLM Observability': 'fa-solid fa-eye',
+    'REST APIs': 'fa-solid fa-plug',
+    'Microservices': 'fa-solid fa-layer-group',
+    'Hybrid VPN Networking': 'fa-solid fa-network-wired',
+    'GitHub': 'fa-brands fa-github',
+    'Git': 'fa-brands fa-git-alt',
+    'default': 'fa-solid fa-code'
+  };
+
   const cardsHtml = (categories || []).map(cat => {
     const itemsHtml = (cat.items || []).map(skill => {
       const isKey = ['Python', 'FastAPI', 'Kubernetes (GKE)', 'LangChain', 'LangGraph', 'Model Context Protocol (MCP)'].includes(skill);
-      return `<span class="skill-badge ${isKey ? 'skill-featured' : ''}">${escapeHtml(skill)}</span>`;
+      const iconClass = skillIcons[skill] || skillIcons.default;
+      return `<span class="skill-badge ${isKey ? 'skill-featured' : ''}"><span class="skill-badge-icon"><i class="${iconClass}"></i></span>${escapeHtml(skill)}</span>`;
     }).join('');
 
     const iconSvg = categoryIcons[cat.category] || SVG_ICONS.code;
@@ -863,6 +920,21 @@ function renderContact(contact = {}, personal = {}) {
                 </a>
               </div>
               <a href="${escapeHtml(contact.linkedin)}" target="_blank" rel="noopener noreferrer" class="btn-copy" title="Open LinkedIn">
+                ${SVG_ICONS.external}
+              </a>
+            </div>
+          ` : ''}
+
+          ${contact.leetcode ? `
+            <div class="contact-method-box">
+              <div class="method-icon">${SVG_ICONS.leetcode}</div>
+              <div class="method-info">
+                <span class="method-label">LeetCode</span>
+                <a href="${escapeHtml(contact.leetcode)}" target="_blank" rel="noopener noreferrer" class="method-value">
+                  leetcode.com/u/IilTAJ5Iru
+                </a>
+              </div>
+              <a href="${escapeHtml(contact.leetcode)}" target="_blank" rel="noopener noreferrer" class="btn-copy" title="Open LeetCode">
                 ${SVG_ICONS.external}
               </a>
             </div>
