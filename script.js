@@ -451,22 +451,22 @@ function renderHero(personal = {}, contact = {}, summary = {}) {
             <div class="hero-social-links">
               ${contact.github ? `
                 <a href="${escapeHtml(contact.github)}" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
-                  ${SVG_ICONS.github}
+                  ${SVG_ICONS.github}<span>GitHub</span>
                 </a>
               ` : ''}
               ${contact.linkedin ? `
                 <a href="${escapeHtml(contact.linkedin)}" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">
-                  ${SVG_ICONS.linkedin}
+                  ${SVG_ICONS.linkedin}<span>LinkedIn</span>
                 </a>
               ` : ''}
               ${contact.leetcode ? `
                 <a href="${escapeHtml(contact.leetcode)}" target="_blank" rel="noopener noreferrer" class="social-btn" title="LeetCode">
-                  ${SVG_ICONS.leetcode}
+                  ${SVG_ICONS.leetcode}<span>LeetCode</span>
                 </a>
               ` : ''}
               ${contact.email ? `
                 <button class="social-btn copy-email-btn" data-email="${escapeHtml(contact.email)}" title="Copy Email">
-                  ${SVG_ICONS.email}
+                  ${SVG_ICONS.email}<span>Email</span>
                 </button>
               ` : ''}
             </div>
